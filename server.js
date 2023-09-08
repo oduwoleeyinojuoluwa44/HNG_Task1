@@ -15,8 +15,8 @@ app.get('/api', (req, res) => {
   const currentDate = new Date ();
   const currentUTCTime = currentDate.toISOString();
 
-  const githubRepoUrl = "https://github.com/username/repo";
-  const githubFileUrl = `${githubRepoUrl}/blob/main/file_name.ext`; // Replace with actual file name
+  const githubRepoUrl = "https://github.com/oduwoleeyinojuoluwa44/HNG_Task1";
+  const githubFileUrl = `${githubRepoUrl}/blob/main/server.js`; // Replace with actual file name
 
   if(!slack_name || !track){
     return res.status(400).json ({error: "Both parameters are required"});
