@@ -13,7 +13,7 @@ app.get('/api', (req, res) => {
   const currentDay = daysOfWeek[new Date().getDay()];
 
   const currentDate = new Date ();
-  const currentUTCTime = currentDate.toISOString();
+  const currentUTCTime = currentDate.toISOString().slice(0, -5) + "Z";
 
   const githubRepoUrl = "https://github.com/oduwoleeyinojuoluwa44/HNG_Task1";
   const githubFileUrl = `${githubRepoUrl}/blob/main/server.js`; // Replace with actual file name
